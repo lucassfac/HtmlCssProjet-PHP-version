@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selection</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="scripts/config.js" defer></script>
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body class = "no-bg">
+        <header>
+            <div class="barre_select">
+                <img src = "images/logo_SYC.png" alt = "logo site web." title = "logo SYC" id="logo">
+                <!-- faire un button avec des infos en plus (trois petites barres)-->
+                <div class="menu">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class = "form-container">
+                    <h1>Choisissez votre voiture</h1>
+                    <p><span class = "ma-classe3-color">Pour commencer, veuillez répondre aux questions suivantes :</span></p>
+                    <form method="get" action="">
+                        <p>
+                            <label for="profil">Quel est votre profil de conducteur ?</label><br>
+                            <select id="profil" name="profil">
+                                <option value="jeune">Jeune conducteur</option>
+                                <option value="familial">Familial</option>
+                                <option value="sportif">Conducteur sportif</option>
+                                <option value="eco">Conducteur éco-responsable</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="budget">Quel est votre budget ?</label><br>
+                            <select id="budget" name="budget">
+                                <option value="moins_10000">Moins de 10 000 €</option>
+                                <option value="entre_10000_20000">Entre 10 000 € et 20 000 €</option>
+                                <option value="plus_20000">Plus de 20 000 €</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="usage">Quel sera l'usage principal du véhicule ?</label><br>
+                            <select id="usage" name="usage">
+                                <option value="trajets_courts">Trajets courts (ville, domicile-travail)</option>
+                                <option value="longs_trajets">Longs trajets réguliers (autoroute, déplacements pro)</option>
+                                <option value="mixte">Usage mixte</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="kilometrage">Quel est votre kilométrage annuel estimé ?</label><br>
+                            <select id="kilometrage" name="kilometrage">
+                                <option value="moins_10000">Moins de 10 000 km</option>
+                                <option value="10000_20000">10 000 à 20 000 km</option>
+                                <option value="plus_20000">Plus de 20 000 km</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="type">Quel type de voiture recherchez-vous ?</label><br>
+                            <select id="type" name="type">
+                                <option value="berline">Berline</option>
+                                <option value="suv">SUV</option>
+                                <option value="cabriolet">Cabriolet</option>
+                                <option value="compacte">Compacte</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="carburant">Quel type de carburant préférez-vous ?</label><br>
+                            <select id="carburant" name="carburant">
+                                <option value="essence">Essence</option>
+                                <option value="diesel">Diesel</option>
+                                <option value="electrique">Électrique</option>
+                                <option value="hybride">Hybride</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="fiabilite">Préférez-vous un véhicule très fiable ou peu coûteux à l'entretien ?</label><br>
+                            <select id="fiabilite" name="fiabilite">
+                                <option value="fiabilite_max">Fiabilité maximale (même si + cher à l'achat)</option>
+                                <option value="entretien_faible">Entretien peu coûteux</option>
+                                <option value="equilibre">Équilibré</option>
+                            </select>
+                        </p>
+                        <button type="submit" class="envoyer">Valider</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class = "page_footer">
+                <span class="material-icons">copyright</span> Lucas B. 2023
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <link rel ="stylesheet" href ="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="barre">
+                <img src = "images/logo_SYC.png" alt = "logo site web." title = "logo SYC" id="logo">
+                <!-- faire un button avec des infos en plus (trois petites barres)-->
+                <div class="menu">
+                    <span class="material-icons">menu</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+            <div class="defzone">
+                <h1>Bien choisir votre voiture<span class = "ma-classe2-color"> avec select your car</span></h1>
+                <h2>Descriptif du site : </h2>
+                <p class="couleur_accueil">Ce site vous aide a chercher une voiture adapte a vos besoins, grace a nos services obtenez les points fiabilite et entretien de votre future voiture.</p>
+            </div>
+            </section>
+            <section>
+            <div class="selectzone">
+                <a href="Choix1.php" title="Choisir une voiture">
+                    <button class = "btn">Choisir une voiture</button>
+                </a>
+                <a href="Choix2.php" title="Verifier la fiabilite d'un vehicule">
+                    <button class = "btn">Verifier la fiabilite d'un vehicule</button>
+                </a>
+            </div>
+            </section>
+        </main>
+        <footer>
+            <div class = "page_footer">
+                <span class="material-icons">copyright</span> Lucas B. 2023
+            </div>
+        </footer>
+    </body>
+</html>
