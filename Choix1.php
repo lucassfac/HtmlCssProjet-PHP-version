@@ -12,8 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
         
-        <script src="scripts/config.js" defer></script>
-        <script src="scripts/script.js" defer></script>
+        <script src="scripts/scriptChoix1.js" defer></script>
     </head>
     
     <body>
@@ -34,7 +33,7 @@
                     <h1>Trouvez votre voiture idéale</h1>
                     <p>Répondez à ces 7 questions pour que notre algorithme identifie le véhicule parfait pour vous.</p>
                     
-                    <form method="get" action="">
+                    <form method="get" id="form-choix1" action="">
                         <div class="form-group">
                             <label for="profil"><span class="material-icons" style="font-size:16px; vertical-align:text-bottom;">person</span> Quel est votre profil ?</label>
                             <select id="profil" name="profil">

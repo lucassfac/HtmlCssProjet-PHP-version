@@ -12,8 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
         
-        <script src="scripts/config.js" defer></script>
-        <script src="scripts/carSelectLogo.js" defer></script> 
+        <script src="scripts/scriptChoix2.js" defer></script>
     </head>
     
     <body class="no-bg">
@@ -32,22 +31,25 @@
             <section>
                 <div class="form-container">
                     <h1>Vérifiez la fiabilité</h1>
-                    <p>Sélectionnez un modèle et sa motorisation pour accéder aux fiches techniques et aux retours d'expérience.</p>
+                    <p>Renseignez les informations du véhicule pour accéder aux retours d'expérience et à la notation.</p>
                     
-                    <form class="methode2" method="post" action="traitement.php">
+                    <form class="methode2" id="form-fiabilite" method="post" action="traitement.php">
                         
                         <div class="form-group">
                             <label for="marque">
                                 <span class="material-icons" style="font-size:16px; vertical-align:text-bottom;">directions_car</span> 
                                 Marque du véhicule :
                             </label>
-                            <select id="marque" name="marque">
+                            <select id="marque" name="marque" required>
                                 <option value="" disabled selected>-- Choisissez une marque --</option>
                                 <option value="renault">Renault</option>
                                 <option value="peugeot">Peugeot</option>
                                 <option value="vw">Volkswagen</option>
                                 <option value="citroen">Citroën</option>
                                 <option value="bmw">BMW</option>
+                                <option value="audi">Audi</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="toyota">Toyota</option>
                             </select>
                         </div>
 
@@ -63,16 +65,17 @@
                                 min="1990" 
                                 max="2025" 
                                 placeholder="Ex: 2018"
-                                style="width: 100%; padding: 12px 15px; border-radius: 12px; border: 2px solid #e0e0e0; background: rgba(255,255,255,0.9); font-family: 'Poppins';"
+                                required
+                                style="width: 100%; padding: 12px 15px; border-radius: 12px; border: 2px solid #e0e0e0; background: rgba(255,255,255,0.9); font-family: 'Poppins'; font-size: 1rem;"
                             >
                         </div>
 
                         <div class="form-group">
                             <label for="motorisation">
                                 <span class="material-icons" style="font-size:16px; vertical-align:text-bottom;">engineering</span> 
-                                Motorisation / Modèle :
+                                Motorisation :
                             </label>
-                            <select id="motorisation" name="motorisation">
+                            <select id="motorisation" name="motorisation" required>
                                 <option value="" disabled selected>-- Choisissez le moteur --</option>
                                 <option value="essence">Essence (Atmosphérique/Turbo)</option>
                                 <option value="diesel">Diesel (HDi, dCi, TDI...)</option>
