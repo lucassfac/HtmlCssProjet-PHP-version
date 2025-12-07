@@ -1,5 +1,5 @@
 <?php
-// traitement1.php
+// traitementChoix1.php
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
